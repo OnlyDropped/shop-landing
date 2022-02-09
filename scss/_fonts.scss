@@ -1,0 +1,30 @@
+@font-face{
+  font-family: 'Lighthouse Personal Use';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Lighthouse'),
+       url('../fonts/Lighthouse Personal Use.woff2') format("woff2"),
+       url('../fonts/Lighthouse Personal Use.woff') format("woff");
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Mont-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Mont-Regular'),
+       url('../fonts/Mont-Regular.woff2') format("woff2"),
+       url('../fonts/Mont-Regular.woff') format("woff");
+  font-display: swap;
+}
+
+
+@font-face{
+  font-family: 'Mont-Black';
+  font-weight: 800;
+  font-style: normal;
+  src: local('Mont-Black'),
+       url('../fonts/Mont-Black.woff2') format("woff2"),
+       url('../fonts/Mont-Black.woff') format("woff");
+  font-display: swap;
+}

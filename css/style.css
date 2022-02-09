@@ -1,0 +1,211 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Lighthouse Personal Use";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lighthouse"), url("../fonts/Lighthouse Personal Use.woff2") format("woff2"), url("../fonts/Lighthouse Personal Use.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mont-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Mont-Regular"), url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mont-Black";
+  font-weight: 800;
+  font-style: normal;
+  src: local("Mont-Black"), url("../fonts/Mont-Black.woff2") format("woff2"), url("../fonts/Mont-Black.woff") format("woff");
+  font-display: swap;
+}
+.slider-item__title {
+  font-family: "Lighthouse Personal Use", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slider-item__price-text {
+  font-family: "Mont-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slider-item__price-num, .slider-item__subtitle {
+  font-family: "Mont-Black", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.slider-item__buy {
+  border: none;
+  width: 327px;
+  padding: 16px 0 17px;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  font-family: "Mont-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 17px;
+  text-align: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 1428px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  padding: 0;
+  border: 1px solid #FFFFFF;
+  width: 87px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  border-left: none;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  border-right: none;
+}
+.slider .slider-track {
+  transition: all 0.1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.slider-item {
+  background-image: url("../img/bg.jpg");
+  height: 100vh;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  padding: 223px 0 233px;
+  transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.slider-item__title {
+  font-size: 100px;
+  line-height: 75px;
+  color: #fff;
+  padding: 0;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.slider-item__title::after {
+  position: absolute;
+  content: "";
+  width: 623px;
+  height: 1px;
+  left: 1px;
+  bottom: 0;
+  background: linear-gradient(90deg, #ffffff -0.02%, rgba(255, 255, 255, 0) 100.02%);
+}
+.slider-item__subtitle {
+  width: 465px;
+  font-size: 50px;
+  line-height: 48px;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-bottom: 41px;
+}
+.slider-item__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+.slider-item__price-text {
+  font-size: 30px;
+  line-height: 29px;
+  color: #fff;
+  margin-right: 109px;
+}
+.slider-item__price-num {
+  font-size: 30px;
+  line-height: 29px;
+  color: #fff;
+}
+.slider-item__buy {
+  display: inline-block;
+  margin-bottom: 71px;
+}
+.slider-item__link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translateY(-20px);
+}/*# sourceMappingURL=style.css.map */
