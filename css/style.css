@@ -129,6 +129,10 @@ a {
   color: #fff;
 }
 
+body {
+  background-color: firebrick;
+}
+
 html::-webkit-scrollbar {
   width: 16px;
   height: 16px;
