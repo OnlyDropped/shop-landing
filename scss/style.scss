@@ -140,7 +140,11 @@
       height: 1px;
       left: 1px;
       bottom: 0;
-      background: linear-gradient(90deg, #ffffff -0.02%, rgba(255, 255, 255, 0) 100.02%);
+      background: linear-gradient(
+        90deg,
+        #ffffff -0.02%,
+        rgba(255, 255, 255, 0) 100.02%
+      );
     }
   }
   &__subtitle {
@@ -197,10 +201,18 @@
     &:hover {
       box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
       transform: translateX(3px);
-      background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #cb8d62 104.72%);
+      background: linear-gradient(
+        351.3deg,
+        rgba(203, 141, 98, 0) 33.24%,
+        #cb8d62 104.72%
+      );
       .our-product__info {
         &::after {
-          background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #cb8d62 104.72%);
+          background: linear-gradient(
+            351.3deg,
+            rgba(203, 141, 98, 0) 33.24%,
+            #cb8d62 104.72%
+          );
         }
       }
     }
@@ -229,7 +241,11 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(180deg, rgba(7, 44, 38, 0.5) 0%, rgba(7, 44, 38, 0) 100%);
+      background: linear-gradient(
+        180deg,
+        rgba(7, 44, 38, 0.5) 0%,
+        rgba(7, 44, 38, 0) 100%
+      );
       transform: rotate(-180deg);
     }
   }
@@ -256,13 +272,13 @@
   &__card {
     width: 446px;
     overflow: hidden;
-    transition: all .6s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     &:hover {
       box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
-      .sales-slider__heart{
+      .sales-slider__heart {
         background-color: rgba(255, 255, 255, 1);
-        path{
-          fill: #5E3928;
+        path {
+          fill: #5e3928;
         }
       }
     }
@@ -306,6 +322,40 @@
     font-size: 30px;
     line-height: 29px;
     color: #031412;
+  }
+  &__go-to {
+    display: block;
+    @extend %btn;
+    margin: 99px auto 0;
+  }
+  .slider-track {
+    transition: all 0.1s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    padding: 0;
+    border: 1px solid #031412;
+    width: 87px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-arrow.slick-prev {
+    left: 0;
+    border-left: none;
+  }
+  .slick-arrow.slick-next {
+    right: 0;
+    border-right: none;
   }
 }
 
