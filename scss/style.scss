@@ -2,6 +2,9 @@
 @import "fonts";
 @import "vars";
 @import "global";
+.header{
+    background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
+  }
 .header {
   position: relative;
   z-index: 3;
@@ -724,7 +727,7 @@
     line-height: 19px;
     background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    //-webkit-background-clip: text;
     display: flex;
     align-items: center;
     width: fit-content;
@@ -740,6 +743,21 @@
 .footer-inner {
   display: flex;
   justify-content: space-between;
+  &__copyright {
+    width: 214px;
+    @extend %Mont-Regular-400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #adadad;
+    margin: 25px 0 21px;
+  }
+  &__privacy {
+    @extend %Mont-Regular-400;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: underline;
+    color: #ffffff;
+  }
   &__title {
     @extend %Mont-Black-800;
     font-size: 18px;
@@ -763,12 +781,12 @@
       text-decoration: underline;
     }
   }
-  &__social{
+  &__social {
     display: flex;
     margin-top: 17px;
     align-items: center;
   }
-  &__social-link + .footer-inner__social-link{
+  &__social-link + .footer-inner__social-link {
     margin-left: 18px;
   }
 }
