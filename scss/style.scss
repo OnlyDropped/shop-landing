@@ -37,11 +37,11 @@
     &:hover {
       @extend %Mont-Black-800;
       text-decoration-line: underline;
-      background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
+      //background: linear-gradient(92.09deg, #5e3928 -79.4%, #e4a16f 84.12%);
       color: #5e3928;
-      display: table;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      //display: table;
+      //background-clip: text;
+      //-webkit-text-fill-color: transparent;
     }
   }
   &__wrap {
@@ -768,8 +768,9 @@
     @extend %Mont-Black-800;
     font-size: 14px;
     line-height: 19px;
-    background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
-    -webkit-text-fill-color: transparent;
+    color: #5e3928;
+    //background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    //-webkit-text-fill-color: transparent;
     //-webkit-background-clip: text;
     display: flex;
     align-items: center;

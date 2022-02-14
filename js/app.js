@@ -70,3 +70,7 @@ $('.sales-slider').slick({
   touchThreshold: 100,
 });
 
+$('.header-nav__btn').click(function(){
+  $(this).toggleClass('open');
+  $('.header-nav__list').toggleClass('header-nav__list--active');
+});

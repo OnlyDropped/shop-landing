@@ -9,18 +9,112 @@
   }
 }
 @media (max-width: 768px) {
-  .header-nav{
+  .header-nav {
     padding-top: 30px;
     padding-bottom: 65px;
-    &__list{
+    &__list {
       position: absolute;
       bottom: 0;
       left: 52px;
       margin-left: 0;
     }
-    &__link:hover{
+    &__link:hover {
       background-color: transparent;
       color: #000;
+    }
+  }
+}
+@media (max-width: 605px) {
+  .header{
+    padding-top: 30px;
+  }
+  .header-nav {
+    padding-bottom: 115px;
+    padding-top: 0;
+    &__list {
+      display: none;
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: firebrick;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      bottom: 0;
+      transform: translateX(-100%);
+      transition: transform .9s;
+    }
+    &__list--active{
+      transform: translateX(0%);
+    }
+    &__item + .header-nav__item {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    &__wrap {
+      left: 50%;
+    }
+    &__btn {
+      display: block;
+      width: 60px;
+      height: 45px;
+      //background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+      display: flex;
+      position: relative;
+      transition-duration: 1s;
+      z-index: 2;
+      cursor: pointer;
+    }
+    &__btn span {
+      height: 9px;
+      width: 60px;
+      background-color: #fff;
+      border-radius: 20px;
+      position: absolute;
+      transition-duration: 0.25s;
+      transition-delay: 0.25s;
+    }
+    &__btn span:before {
+      left: 0;
+      position: absolute;
+      top: 35px;
+      height: 9px;
+      width: 60px;
+      background-color: #fff;
+      content: "";
+      border-radius: 20px;
+      transition-duration: 0.25s;
+      transition: transform 0.25s, top 0.25s 0.25s;
+    }
+    &__btn span:after {
+      left: 0;
+      position: absolute;
+      top: 18px;
+      height: 9px;
+      width: 60px;
+      background-color: #fff;
+      content: "";
+      border-radius: 20px;
+      transition-duration: 0.25s;
+      transition: transform 0.25s, top 0.25s 0.25s;
+    }
+    &__btn.open span {
+      transition-duration: 0.1s;
+      transition-delay: 0.25s;
+      background: transparent;
+    }
+    &__btn.open span:before {
+      transition: top 0.25s, transform 0.25s 0.25s;
+      top: 17px;
+      transform: rotateZ(-45deg);
+    }
+    &__btn.open span:after {
+      transition: top 0.4s, transform 0.25s 0.25s;
+      top: 17px;
+      transform: rotateZ(45deg);
     }
   }
 }
