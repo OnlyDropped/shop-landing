@@ -23,6 +23,9 @@
       color: #000;
     }
   }
+  .slider-item {
+    padding: 320px 0 233px;
+  }
   .footer {
     padding: 80px 0;
   }
@@ -218,7 +221,7 @@
       max-width: 100%;
       text-align: center;
     }
-    &__social{
+    &__social {
       justify-content: center;
     }
   }
