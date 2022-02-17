@@ -24,7 +24,156 @@
     }
   }
   .slider-item {
-    padding: 320px 0 233px;
+    padding: 320px 0 359px;
+    &__title {
+      font-size: 60px;
+      line-height: 69px;
+      padding-bottom: 15px;
+      margin-bottom: 26px;
+    }
+    &__title::after {
+      width: 388px;
+    }
+    &__subtitle {
+      width: 357px;
+      font-size: 30px;
+      line-height: 39px;
+      margin-bottom: 25px;
+    }
+    &__price {
+      margin-bottom: 43px;
+    }
+    &__price-text,
+    &__price-num {
+      font-size: 24px;
+      line-height: 23px;
+      margin-right: 75px;
+    }
+    &__buy {
+      width: 244px;
+      font-size: 18px;
+      line-height: 17px;
+      color: #ffffff;
+    }
+    &__link {
+      transform: translateY(0px);
+      position: absolute;
+      bottom: 30px;
+    }
+  }
+  .slider .slick-dots {
+    bottom: 150px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 39px;
+  }
+  .our-product {
+    padding: 80px 0;
+    &__item {
+      box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
+      height: 235px;
+      width: 214px;
+      img {
+        width: 214px;
+        height: 235px;
+      }
+    }
+    &__info {
+      padding: 0 10px 17px;
+    }
+    &__span {
+      font-size: 20px;
+      line-height: 19px;
+    }
+  }
+  .sales-slider {
+    padding-bottom: 49px;
+    .slick-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+    .slick-dots button {
+      padding: 0;
+      font-size: 0;
+      border: none;
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+      cursor: pointer;
+      background: #000;
+    }
+    .slick-dots li[class="slick-active"] button {
+      background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+    }
+    &__item {
+      width: 324px;
+    }
+    &__card {
+      width: 324px;
+    }
+    &__info {
+      padding-top: 28px;
+      align-items: center;
+    }
+    &__text {
+      width: 168px;
+      font-size: 20px;
+      line-height: 19px;
+    }
+    &__num {
+      font-size: 30px;
+      line-height: 29px;
+      color: #031412;
+    }
+    &__go-to {
+      margin: 40px auto 0;
+    }
+  }
+  .new-slider {
+    &__item {
+      .sales-slider__card,
+      .sales-slider__item {
+        width: 324px;
+      }
+      .sales-slider__item {
+        img {
+          width: 324px;
+        }
+      }
+    }
+    .slick-initialized .slick-slide {
+      display: block;
+      width: 324px;
+    }
+  }
+  .copper {
+    padding: 120px 0;
+    &__title {
+      font-size: 100px;
+      line-height: 75px;
+      margin-bottom: 38px;
+    }
+    &__text {
+      font-size: 20px;
+      line-height: 19px;
+      margin-bottom: 42px;
+      width: 306px;
+    }
+  }
+  .recommend,
+  .sale {
+    padding: 120px 0;
+  }
+  .reviews-slider {
+    padding-bottom: 30px;
+  }
+  .why {
+    padding: 120px 0;
   }
   .footer {
     padding: 80px 0;
@@ -186,6 +335,121 @@
     &__btn span:after {
       width: 40px;
       border-radius: 5px;
+    }
+  }
+  .slider {
+    margin-top: -185px;
+  }
+  .slider-item {
+    padding: 116px 0 31px;
+    &__title {
+      font-size: 30px;
+      line-height: 34px;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+    }
+    &__title::after {
+      width: 199px;
+    }
+    &__subtitle {
+      width: 188px;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+    &__price-text {
+      font-size: 16px;
+      line-height: 15px;
+      margin-right: 49px;
+    }
+    &__price-num {
+      font-size: 16px;
+      line-height: 15px;
+    }
+    &__buy {
+      font-size: 18px;
+      line-height: 17px;
+      text-align: center;
+      padding: 16px 0 17px;
+      width: 155px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    line-height: 18px;
+    margin-bottom: 39px;
+  }
+  .our-product {
+    padding: 39px 0;
+    &__wrap {
+      row-gap: 20px;
+    }
+    &__item {
+      width: 135px;
+      height: 148px;
+    }
+    &__info {
+      padding: 0 12px 12px;
+    }
+    &__span {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  .sales,
+  .new {
+    padding: 40px 0;
+  }
+  .copper {
+    padding: 49px 0 256px;
+    &__title {
+      font-size: 60px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 13px;
+      margin-bottom: 18px;
+    }
+    &__link {
+      display: block;
+    }
+  }
+  .recommend {
+    padding: 40px 0;
+  }
+  .sale {
+    padding: 40px 0;
+  }
+  .reviews {
+    padding: 40px 0;
+  }
+  .why {
+    padding: 40px 0;
+    &__wrap {
+      row-gap: 24px;
+    }
+    &__item {
+      width: 135px;
+    }
+    &__item-img {
+      margin-bottom: 20px;
+    }
+    &__item-title {
+      font-size: 16px;
+      line-height: 15px;
+      margin-bottom: 14px;
+    }
+    &__item-text {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 11px;
+    }
+    &__item-link {
+      display: flex;
+      font-size: 12px;
+      line-height: 19px;
     }
   }
   .footer {
