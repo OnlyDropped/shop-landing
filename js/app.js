@@ -2,8 +2,8 @@ $('.slider').slick({
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
   slidesToShow: 1,
   slidesToScroll: 1,
-  //autoplay: true,
-  //speed: 2500,
+  autoplay: true,
+  speed: 2500,
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icon/arrow-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
@@ -15,6 +15,7 @@ $('.slider').slick({
     {
       breakpoint: 769,
       settings: {
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -33,6 +34,24 @@ $('.new-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.recommend__wrap').slick({
@@ -45,7 +64,26 @@ $('.recommend__wrap').slick({
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
+
 $('.sale-slider').slick({
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
   speed: 1000,
@@ -56,6 +94,24 @@ $('.sale-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 $('.reviews-slider').slick({
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
@@ -67,6 +123,26 @@ $('.reviews-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 
@@ -77,6 +153,26 @@ $('.sales-slider').slick({
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icon/chevron-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icon/arrow-next.svg" alt=""></button>',
   touchThreshold: 100,
+    responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.header-nav__btn').click(function(){
