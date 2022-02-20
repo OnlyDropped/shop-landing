@@ -2,9 +2,9 @@
 @import "fonts";
 @import "vars";
 @import "global";
-//.header {
-//  background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
-//}
+.header {
+  background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
+}
 .header {
   position: relative;
   z-index: 3;
@@ -66,6 +66,9 @@
       transform: translateX(-50%);
     }
   }
+}
+.header-wrap{
+  position: relative;
 }
 .slider {
   margin-top: -160px;
@@ -143,11 +146,7 @@
       height: 1px;
       left: 1px;
       bottom: 0;
-      background: linear-gradient(
-        90deg,
-        #ffffff -0.02%,
-        rgba(255, 255, 255, 0) 100.02%
-      );
+      background: linear-gradient(90deg, #ffffff -0.02%, rgba(255, 255, 255, 0) 100.02%);
     }
   }
   &__subtitle {
@@ -204,18 +203,10 @@
     &:hover {
       box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
       transform: translateX(3px);
-      background: linear-gradient(
-        351.3deg,
-        rgba(203, 141, 98, 0) 33.24%,
-        #cb8d62 104.72%
-      );
+      background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #cb8d62 104.72%);
       .our-product__info {
         &::after {
-          background: linear-gradient(
-            351.3deg,
-            rgba(203, 141, 98, 0) 33.24%,
-            #cb8d62 104.72%
-          );
+          background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #cb8d62 104.72%);
         }
       }
     }
@@ -244,11 +235,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(7, 44, 38, 0.5) 0%,
-        rgba(7, 44, 38, 0) 100%
-      );
+      background: linear-gradient(180deg, rgba(7, 44, 38, 0.5) 0%, rgba(7, 44, 38, 0) 100%);
       transform: rotate(-180deg);
     }
   }
@@ -778,6 +765,236 @@
     img {
       margin-left: 7px;
     }
+  }
+}
+.about-us {
+  background-color: #f7f7f7;
+  &__inner {
+    padding: 39px 0 180px;
+    background-image: url("../img/about-bg.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: inherit;
+  }
+  &__title {
+    @extend %Lighthouse-400;
+    font-size: 100px;
+    line-height: 75px;
+    color: #031412;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 623px;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+      background: #031412;
+    }
+  }
+  &__blockquote {
+    max-width: 623px;
+    width: 100%;
+    @extend %Mont-Bold-600;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 48px;
+    margin-bottom: 58px;
+    text-align: center;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon/quote-left.svg");
+      width: 34px;
+      height: 34px;
+    }
+    &::before {
+      left: 0;
+      top: 0;
+    }
+    &::after {
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__wrap {
+    width: 355px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 29px;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.breadcrumbs {
+  margin-bottom: 128px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item + .breadcrumbs__item {
+    margin-left: 17px;
+  }
+  &__item {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 15px;
+      width: 1px;
+      background: #000;
+      top: 2px;
+      right: -10px;
+      transform: skewX(-20deg);
+    }
+  }
+  &__item:last-child {
+    .breadcrumbs__link {
+      @extend %Mont-Black-800;
+      pointer-events: none;
+      cursor: default;
+    }
+    &::after {
+      content: none;
+    }
+  }
+  &__link {
+    @extend %Mont-Bold-600;
+    font-size: 18px;
+    line-height: 17px;
+    color: #031412;
+  }
+}
+.our-clients {
+  padding: 133px 0 140px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    max-width: 517px;
+    width: 100%;
+  }
+  &__info-title {
+    width: 310px;
+    @extend %Lighthouse-400;
+    font-size: 50px;
+    line-height: 53px;
+    color: #031412;
+    margin-bottom: 23px;
+  }
+  &__info-text {
+    @extend %Mont-Regular-400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #031412;
+  }
+  &__content-text {
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 48px;
+    margin-bottom: 25px;
+    background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text {
+    background: url("../img/client.png");
+    background-size: cover;
+  }
+
+  &__content-num {
+    background: #fff;
+    mix-blend-mode: lighten;
+    @extend %Mont-Black-800;
+    font-size: 250px;
+    line-height: 96.4%;
+  }
+}
+.our-history {
+  padding: 74px 0;
+  background-image: url("../img/history-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__title {
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__info {
+    max-width: 445px;
+    width: 100%;
+    margin: 0 15px;
+  }
+  &__text + .our-history__text {
+    margin-top: 28px;
+  }
+  &__text {
+    @extend %Mont-Regular-400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+  }
+}
+.our-values {
+  padding: 79px 0 81px;
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__info {
+    margin-left: 31px;
+  }
+  &__title {
+    width: 292px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  &__text {
+    width: 485px;
+    @extend %Mont-Regular-400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #031412;
+    margin-bottom: 40px;
+  }
+  &__item + .our-values__item {
+    margin-top: 40px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__item-text {
+    width: 203px;
+    @extend %Mont-Bold-600;
+    font-size: 25px;
+    line-height: 24px;
+    color: #031412;
+    margin-left: 29px;
   }
 }
 .footer {
