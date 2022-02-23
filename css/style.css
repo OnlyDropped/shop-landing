@@ -129,10 +129,6 @@ a {
   color: #fff;
 }
 
-body {
-  overflow-x: clip;
-}
-
 html::-webkit-scrollbar {
   width: 16px;
   height: 16px;
@@ -2193,6 +2189,122 @@ body {
     display: flex;
     font-size: 12px;
     line-height: 19px;
+  }
+  .about-us__title {
+    font-size: 30px;
+    line-height: 22px;
+    padding-bottom: 21px;
+    margin-bottom: 16px;
+  }
+  .about-us__title::after {
+    width: 155px;
+  }
+  .about-us__blockquote {
+    height: 96px;
+    font-size: 20px;
+    line-height: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 13px;
+  }
+  .about-us__wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about-us__text {
+    width: 96px;
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+  .breadcrumbs__link {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .our-clients {
+    padding: 40px 0 23px;
+  }
+  .our-clients__info-title {
+    font-size: 20px;
+    line-height: 15px;
+    margin-bottom: 17px;
+  }
+  .our-clients__info-text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .our-clients__content-text {
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  .our-clients__content-num {
+    font-size: 100px;
+    line-height: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-history {
+    padding: 40px 0;
+  }
+  .our-history__title {
+    font-size: 20px;
+    line-height: 15px;
+    margin-bottom: 22px;
+  }
+  .our-history__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-values {
+    padding: 36px 0;
+  }
+  .our-values__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 28px;
+  }
+  .our-values__info {
+    margin-left: 0;
+  }
+  .our-values__title {
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .our-values__text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .our-values__item {
+    width: 205px;
+    margin: 0 auto;
+  }
+  .our-values__item-text {
+    font-size: 16px;
+    line-height: 15px;
+    margin-left: 18px;
   }
   .footer {
     padding: 40px 0;
